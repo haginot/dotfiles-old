@@ -37,6 +37,7 @@ NeoBundle 'Shougo/neocomplete'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
 
+NeoBundle 'Shougo/unite.vim'
 
 call neobundle#end()
 
@@ -52,6 +53,9 @@ let g:neosnippet#enable_snipmate_compatibility = 1
 
 " Tell Neosnippet about the other snippets
 let g:neosnippet#snippets_directory='~/dotfiles/.neocon-snipets'
+
+" Unite history/yank
+let g:unite_source_history_yank_enable = 1
 
 " Required:
 filetype plugin indent on
